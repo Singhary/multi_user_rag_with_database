@@ -7,6 +7,10 @@ from langchain_core.documents import Document
 from dotenv import load_dotenv
 import os
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 load_dotenv()
 
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000 , chunk_overlap=200)
