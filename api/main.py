@@ -2,6 +2,10 @@ import logging
 import os
 import shutil
 import uuid
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 
 from chroma_utils import delete_doc_from_chroma, index_document_to_chroma
 from db_utils import (
