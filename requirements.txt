@@ -10,4 +10,3 @@ fastapi
 uvicorn
 langchain-google-genai
 prisma
-pysqlite3-binary
