@@ -9,10 +9,6 @@ import os
 
 load_dotenv()
 
-__import__('pysqlite3')
-import sys
-sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
-
 text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000 , chunk_overlap=200)
 embedding_function = GoogleGenerativeAIEmbeddings(model="models/embedding-001")
 vectorstore = Chroma(persist_directory="./chroma_db", embedding_function=embedding_function)
