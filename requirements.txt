@@ -10,4 +10,3 @@ fastapi
 uvicorn
 langchain-google-genai
 prisma
-sqlite3 >=3.35.0
