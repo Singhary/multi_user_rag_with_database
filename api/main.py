@@ -19,6 +19,10 @@ logging.basicConfig(filename="app.log", level=logging.INFO)
 
 app = FastAPI()
 
+__import__('pysqlite3')
+import sys
+sys.modules['sqlite3'] = sys.modules.pop('pysqlite3')
+
 
 @app.post("/chat", response_model=QueryResponse)
 async def chat(query_input: QueryInput):
