@@ -89,19 +89,3 @@
 - 🌍 Support multilingual documents.
 
 ---
-
-## 🧑‍💻 Contributors
-
-- [Your Name](https://github.com/your-profile)
-
----
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
-
-<div align="center">
-    <h3>🌟 Thank you for using Multi-User RAG! 🌟</h3>
-</div>
