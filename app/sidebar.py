@@ -2,7 +2,7 @@ import streamlit as st
 from api_utils import upload_document, list_documents, delete_document
 
 def display_sidebar():
-    model_options = ["gemini-2.0-flash" , "models/gemini-2.5-flash-preview-04-17"]
+    model_options = ["gemini-2.0-flash" , "gemini-2.5-flash-preview-04-17"]
     st.sidebar.selectbox("Select Model", model_options , key="model")
     
     uploaded_file = st.sidebar.file_uploader("Choose a file" , type=["pdf" , "docx" , "html"])
